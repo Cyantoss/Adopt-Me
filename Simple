@@ -1,0 +1,33 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("Adopt Me Script")
+
+local serv = win:Server("Main", "")
+
+local btns = serv:Channel("Main")
+
+btns:Button("Make Neon", function()
+DiscordLib:Notification("Executed!", "Pet is now neon", "Close")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Snahple/Neon-Pet/main/Adopt%20Me%20MAKE%20PET%20NEON.txt"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Make mega Neon", function()
+DiscordLib:Notification("Executed", "Pet is now Mega neon", "Close")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Snahple/Mega-Neon-Pet/main/Adopt%20Me%20MAKE%20PET%20MEGA%20NEON.txt"))()
+end)
+
+btns:Seperator()
+
+btns:Button("Make Pet Flyable", function()
+    DiscordLib:Notification("Executed", "Pet is now Flyable", "Close")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Snahple/Make-Pet-Flyable/main/Pet%20Flyable"))()
+    end)
+   
+ btns:Seperator()
+
+btns:Button("Make Pet Rideable", function()
+    DiscordLib:Notification("Executed", "Pet is now Rideable", "Close")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Snahple/Make-Pet-Rideable/main/Adopt%20Me%20MAKE%20PET%20RIDEABLE.txt"))()
+    end)
